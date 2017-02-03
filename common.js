@@ -52,7 +52,7 @@ var slider = (function () {
             var movableSlide = slides.filter('.inslide');
 
             activeSlide.animate( {left: reqSlideStrafe}, duration);
-
+            // пишет что не функция
             movableSlide.animate({left: 0}, duration, function () {
                 var $this = $(this);
                 slides.css('left', '0').removeClass('active');

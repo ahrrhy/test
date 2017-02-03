@@ -1,0 +1,213 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 7, ../sass/screen.scss */
+.section-header {
+  font: 600 2em/2em Sans;
+  text-transform: uppercase;
+  color: darkcyan;
+}
+
+/* line 12, ../sass/screen.scss */
+.description {
+  margin: 0 auto;
+  font: 400 1.2em/1.4em Serif;
+  color: darkolivegreen;
+}
+
+/* line 19, ../sass/screen.scss */
+.gallery-wrapper {
+  margin: 5% auto;
+}
+
+/* line 22, ../sass/screen.scss */
+.gallery-item {
+  display: inline-block;
+}
+/* line 24, ../sass/screen.scss */
+.gallery-item:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 34, ../sass/screen.scss */
+span.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: red;
+}
+
+/* line 40, ../sass/screen.scss */
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 47, ../sass/screen.scss */
+a.prev,
+a.next {
+  text-decoration: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* line 65, ../sass/screen.scss */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 69, ../sass/screen.scss */
+.next {
+  position: absolute;
+  right: 0;
+}
+
+/* line 73, ../sass/screen.scss */
+.prev {
+  position: absolute;
+  left: 0;
+}
+
+/* line 80, ../sass/screen.scss */
+.modal-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  padding: 30px 0;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: darkolivegreen;
+  overflow: auto;
+}
+
+/* line 91, ../sass/screen.scss */
+.modal-content {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
+
+/* line 97, ../sass/screen.scss */
+.modal-slides {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 101, ../sass/screen.scss */
+.modal-slides .modal-slide {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 106, ../sass/screen.scss */
+.modal-slide-item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+/* line 111, ../sass/screen.scss */
+.modal-slide-item.active {
+  z-index: 1;
+  position: relative;
+}
+/* line 115, ../sass/screen.scss */
+.modal-slide-item.inslide {
+  z-index: 2;
+}
+
+/* line 119, ../sass/screen.scss */
+.thumbnail-list {
+  position: absolute;
+  bottom: -40%;
+}
+
+/* line 124, ../sass/screen.scss */
+.thumbnail-item:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

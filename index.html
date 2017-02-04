@@ -3,22 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <script src="jquery-3.1.1.min.js"></script>
-
         <title>Title</title>
-
-
         <!-- bootstrap-->
-
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
         <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
-
         <!--[if IE]>
         <link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <![endif]-->
@@ -27,11 +16,11 @@
     <body>
     <div class="container">
         <div class="row gallery-wrapper">
-            <ul class="row gallery-list">
-                <li class="col-sm gallery-item"><img src="http://lorempixel.com/400/200/abstract" alt="abstract" class="img-fluid"></li>
-                <li class="col-sm gallery-item"><img src="http://lorempixel.com/400/200/animals" alt="animals" class="img-fluid"></li>
-                <li class="col-sm gallery-item"><img src="http://lorempixel.com/400/200/nightlife" alt="nightlife" class="img-fluid"></li>
-                <li class="col-sm gallery-item"><img src="http://lorempixel.com/400/200/technics" alt="technics" class="img-fluid"></li>
+            <ul class="row gallery-list ">
+                <li class="col-sm gallery-item "><img src="http://lorempixel.com/400/200/abstract" alt="abstract" class="img-fluid"></li>
+                <li class="col-sm gallery-item "><img src="http://lorempixel.com/400/200/animals" alt="animals" class="img-fluid"></li>
+                <li class="col-sm gallery-item "><img src="http://lorempixel.com/400/200/nightlife" alt="nightlife" class="img-fluid"></li>
+                <li class="col-sm gallery-item "><img src="http://lorempixel.com/400/200/technics" alt="technics" class="img-fluid"></li>
             </ul>
         </div>
         <div class="row modal-wrapper">
@@ -46,17 +35,24 @@
                     </ul>
                     <a class="prev slider__controls-button slider__controls-button_prev" href="#" >&#10094;</a>
                     <a class="next slider__controls-button slider__controls-button_next" href="#" >&#10095;</a>
+
+                    <ul class="slider__dots row justify-content-sm-center">
+
+                    </ul>
+                    <ul class="row thumbnail-list">
+                        <li class="col-3 thumbnail-item"><img src="http://lorempixel.com/400/200/abstract" alt="abstract" class="img-fluid"></li>
+                        <li class="col-3 thumbnail-item"><img src="http://lorempixel.com/400/200/animals" alt="animals" class="img-fluid"></li>
+                        <li class="col-3 thumbnail-item"><img src="http://lorempixel.com/400/200/nightlife" alt="nightlife" class="img-fluid"></li>
+                        <li class="col-3 thumbnail-item"><img src="http://lorempixel.com/400/200/technics" alt="technics" class="img-fluid"></li>
+                    </ul>
                 </div>
 
-                <ul class="row no-gutters thumbnail-list bottom">
-                    <li class="col-sm thumbnail-item"><img src="http://lorempixel.com/400/200/abstract" alt="abstract" class="img-fluid"></li>
-                    <li class="col-sm thumbnail-item"><img src="http://lorempixel.com/400/200/animals" alt="animals" class="img-fluid"></li>
-                    <li class="col-sm thumbnail-item"><img src="http://lorempixel.com/400/200/nightlife" alt="nightlife" class="img-fluid"></li>
-                    <li class="col-sm thumbnail-item"><img src="http://lorempixel.com/400/200/technics" alt="technics" class="img-fluid"></li>
-                </ul>
             </div>
         </div>
     </div>
+
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="common.js"></script>
     </body>
 </html>

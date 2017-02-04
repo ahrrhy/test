@@ -150,20 +150,49 @@ a.next {
   left: 0;
 }
 
-/* line 80, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
+.slider__dots {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  z-index: 5;
+}
+
+/* line 83, ../sass/screen.scss */
+.slider__dots-item {
+  background-color: #999999;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  margin: 0 5px;
+}
+/* line 88, ../sass/screen.scss */
+.slider__dots-item.active, .slider__dots-item:hover, .slider__dots-item:focus {
+  background-color: #5c5c5c;
+}
+
+/* line 92, ../sass/screen.scss */
+.slider__dots-link {
+  display: block;
+  height: 15px;
+  width: 15px;
+}
+
+/* line 99, ../sass/screen.scss */
 .modal-wrapper {
+  display: none;
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: auto;
   padding: 30px 0;
   z-index: 1;
   left: 0;
   top: 0;
-  background-color: darkolivegreen;
-  overflow: auto;
+  background-color: black;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-/* line 91, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 .modal-content {
   width: 90%;
   height: 100%;
@@ -171,43 +200,48 @@ a.next {
   position: relative;
 }
 
-/* line 97, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .modal-slides {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-/* line 101, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .modal-slides .modal-slide {
   width: 100%;
   height: 100%;
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 .modal-slide-item {
   position: absolute;
   left: 0;
   top: 0;
   z-index: 0;
 }
-/* line 111, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .modal-slide-item.active {
   z-index: 1;
   position: relative;
 }
-/* line 115, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .modal-slide-item.inslide {
   z-index: 2;
 }
 
-/* line 119, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .thumbnail-list {
   position: absolute;
   bottom: -40%;
+  padding-bottom: 5%;
 }
 
-/* line 124, ../sass/screen.scss */
-.thumbnail-item:hover {
+/* line 146, ../sass/screen.scss */
+.thumbnail-item {
+  display: inline-block;
+}
+/* line 148, ../sass/screen.scss */
+.thumbnail-item:hover, .thumbnail-item.active {
   cursor: pointer;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 8px rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
